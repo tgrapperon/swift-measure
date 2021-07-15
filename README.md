@@ -1,3 +1,3 @@
-# swift-metrics
+# swift-measure
 
 A benchmarking library
