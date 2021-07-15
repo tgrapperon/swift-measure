@@ -65,7 +65,7 @@ public struct Suite<Input, Destination> {
     var tables = [(String, Input)]()
     report("Executing \(name) suite…")
     for study in studies {
-      report("Conducting \(study.label) study…", level: 1)
+      report("Conducting \(study.label.isEmpty ? "" : "\(study.label + " ")")study…", level: 1)
       let rendered = try study(())
       tables.append((study.label, rendered))
     }

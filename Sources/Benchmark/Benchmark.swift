@@ -44,7 +44,7 @@ public extension Suite where Input == Table<String>, Destination == String {
   }
   
   mutating func register(benchmark: AnyBenchmark) {
-    addStudy(benchmark.name) { study in
+    addStudy("") { study in
       study.benchmark(benchmark.name) { measure in
         benchmark.setUp()
         var state = BenchmarkState()
