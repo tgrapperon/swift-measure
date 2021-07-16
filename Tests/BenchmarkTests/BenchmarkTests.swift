@@ -48,7 +48,7 @@ final class BenchmarkTests: XCTestCase {
                  74, 37, 60, 28, 77, 20, 77, 23, 61, 18, 15, 63, 35, 89, 72, 12, 3, 96, 36, 55, 8, 65,
                  67, 91, 10, 32, 100, 95, 49, 73, 74, 75, 73]
 
-    // Define a function that returns a block that count the number of time a comparison was realized when
+    // Define a function that returns a block that counts the number of time a comparison was realized when
     // sorting an array provided as input
     func countNumberOfComparison(sortAlgorithm: @escaping ([Int], (Int, Int) -> Bool) -> [Int]) -> Block<[Int], Int> {
       .init { input in
