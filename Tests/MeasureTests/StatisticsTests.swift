@@ -1,4 +1,4 @@
-@testable import Metrics
+@testable import Measure
 import XCTest
 
 final class StatisticsTests: XCTestCase {
