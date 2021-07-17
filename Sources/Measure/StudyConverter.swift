@@ -14,7 +14,7 @@ public struct StudyConverter<StudyOutput, SuiteInput> {
 }
 
 extension StudyConverter where StudyOutput == Measure<TimeInterval>, SuiteInput == Table<String> {
-  /// The default converter for tabular time mesures.
+  /// The default converter for tabular time measures.
   static func defaultConverter() -> StudyConverter<Measure<TimeInterval>, Table<String>> {
     .init { results in
       let columns: [Header] =
