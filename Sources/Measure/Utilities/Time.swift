@@ -1,5 +1,6 @@
 import Foundation
 
+@inline(__always)
 public func now() -> UInt64 {
   if #available(iOS 10.0, macOS 10.12, *) {
     return clock_gettime_nsec_np(CLOCK_UPTIME_RAW)
